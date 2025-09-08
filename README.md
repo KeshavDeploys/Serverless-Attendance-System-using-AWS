@@ -32,7 +32,30 @@ Capture → Grab a snapshot from the live video feed.<br />
 Send → Image (Base64) is POSTed to Lambda via API Gateway.<br />
 Lambda → Uses Rekognition to match the face, logs presence in DynamoDB.<br />
 Response → UI displays Attendance marked or Face not recognized.<br />
+---
 
+How to setup locally
+2. Backend Setup (AWS)<br />
+Create S3 bucket (e.g. attendence-intern-project) and upload training images in faces/.<br />
+
+Create Rekognition Collection:<br />
+aws rekognition create-collection --collection-id AttendicityCollection --region ap-south-1<br />
+
+Create DynamoDB Table named Attendance with userId as primary key.<br />
+Create a Lambda Function (MarkAttendance) using Node.js 20.x runtime.<br />
+Attach an IAM role with Rekognition, DynamoDB, S3 permissions.<br />
+Deploy the index.js (provided in lambda/) as the handler.<br />
+Create an API Gateway (HTTP API):<br />
+Integration: Lambda → MarkAttendance<br />
+Route: POST /MarkAttendence<br />
+Enable CORS (* origins, OPTIONS, POST methods, Content-Type, Authorization headers)<br />
+Deploy stage (e.g. dev)<br />
+
+3. Frontend Setup<br />
+Edit index.html and replace the API_URL constant:<br />
+const API_URL = "https://your-api-id.execute-api.ap-south-1.amazonaws.com/dev/MarkAttendence";<br />
+Serve the file locally (to avoid file:// CORS issues).<br />
+# Use Live Server in VSCode<br />
 ---
 
 📬 Contact ME<br />

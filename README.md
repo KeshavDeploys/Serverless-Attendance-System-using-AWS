@@ -37,9 +37,6 @@ Response → UI displays Attendance marked or Face not recognized.<br />
 
 📬 Contact ME<br />
 Feel free to connect or collaborate:<br />
-LinkedIn<br />
-GitHub<br />
-Instagram<br />
 
 📝 License<br />
 This project is open source and free to use — feel free to fork, reference, or build on top of it!<br />

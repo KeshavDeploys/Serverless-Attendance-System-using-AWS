@@ -26,22 +26,22 @@ A serverless **face-based attendance system** built with:
 ---
 
 🎥 How It Works
-Landing Page → Click Try it out.
-Start Camera → Allow webcam access.
-Capture → Grab a snapshot from the live video feed.
-Send → Image (Base64) is POSTed to Lambda via API Gateway.
-Lambda → Uses Rekognition to match the face, logs presence in DynamoDB.
-Response → UI displays Attendance marked or Face not recognized.
+Landing Page → Click Try it out.<br />
+Start Camera → Allow webcam access.<br />
+Capture → Grab a snapshot from the live video feed.<br />
+Send → Image (Base64) is POSTed to Lambda via API Gateway.<br />
+Lambda → Uses Rekognition to match the face, logs presence in DynamoDB.<br />
+Response → UI displays Attendance marked or Face not recognized.<br />
 
 ---
 
-📬 Contact Me`<br />`
-Feel free to connect or collaborate:`<br />`
-LinkedIn`<br />`
-GitHub`<br />`
-Instagram`<br />`
+📬 Contact ME<br />
+Feel free to connect or collaborate:<br />
+LinkedIn<br />
+GitHub<br />
+Instagram<br />
 
-📝 License`<br />`
-This project is open source and free to use — feel free to fork, reference, or build on top of it!`<br />`
-`<br />`
-Let me know if you’d like to add badges (like GitHub stars, last commit, etc.) or dark mode screenshots!`<br />`
+📝 License<br />
+This project is open source and free to use — feel free to fork, reference, or build on top of it!<br />
+<br />
+Let me know if you’d like to add badges (like GitHub stars, last commit, etc.) or dark mode screenshots!<br />

@@ -2,12 +2,6 @@
 
 ------
 
-## 📸 Screenshots
-
-### Desktop View
-
-![Desktop View](images/preview.png)
-
 # ⚡ Attendicity
 
 A serverless **face-based attendance system** built with:
@@ -16,7 +10,7 @@ A serverless **face-based attendance system** built with:
 - **Backend**: AWS Lambda + API Gateway + Rekognition + DynamoDB
 - **Storage**: Amazon S3 for face datasets
 
-<img src="screenshot.png" alt="Attendicity UI" width="700"/>
+<img src="Screenshot.png" alt="Attendicity UI" width="700"/>
 
 ---
 

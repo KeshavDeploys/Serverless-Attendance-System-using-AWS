@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Attendicity — RealTime Attendance System</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  
+</style>
+</head>
+<body>
+  <div class="card">
+    <header>
+      <div>
+        <h1>Attendicity — RealTime Attendence System</h1>
+        <div class="subtitle">Webcam capture → Rekognition attendance</div>
+      </div>
+      <div style="margin-left:auto">
+        <span class="status" id="statusBadge"><span style="opacity:.7">Ready</span></span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <div class="left">
+        <video id="video" autoplay playsinline muted></video>
+
+        <div class="controls">
+          <button id="captureBtn">Capture Image</button>
+          <button id="sendBtn" class="primary" disabled>Mark Attendence</button>
+          <button id="clearBtn">Reset Image</button>
+        </div>
+
+        <div class="hint">This is just a demo representation of<strong></strong>. Realtime Face Recognition and Attendence System.</div>
+      </div>
+
+      <div class="right">
+        <div id="imgHolder">No capture yet</div>
+        <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+          <div style="flex:1">
+            <strong>API Response</strong>
+            <pre id="output">No activity yet</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      Replace API_URL in the script with your actual endpoint. Serve over HTTP. If browser shows CORS error → API Gateway CORS or Lambda response must include <code>Access-Control-Allow-Origin</code>.
+    </footer> -->
+  </div>
+
+<script src="script.js"> </script>
+
+</body>
+</html>
